@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --width:400px;
+    --height: calc(var(--width) * 0.5);
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:url('http://img7.xooimage.com/files/c/d/7/anim-neige-acd51.gif');
+    background-color: gray;
+}
+
+.sapin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.triangle{
+    background-color: #006408 ;
+    width: var(--width);
+    height: var(--height);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    
+}
+
+.triangle:nth-of-type(1){
+    height: calc(var(--height) * 0.25);
+    width: calc(var(--width) * 0.25);
+    transform: translateY(135%)
+} 
+
+.triangle:nth-of-type(2){
+    height: calc(var(--height) * 0.5);
+    width: calc(var(--width) * 0.5);
+    transform: translateY(50%)
+} 
+
+.triangle:nth-of-type(3){
+    height: calc(var(--height) * 0.75);
+    width: calc(var(--width) * 0.75);
+} 
+
+.bas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tronc{
+    width: 60px;
+    height: 60px;
+    background-color: #642d00;
+}
+.cdx{
+    transform: translateY(-35%);
+    
+}
+.bas{
+  width: 90%;
+}
+
+
+.cdx img{
+    width:200px;
+    
+}
+.deco{
+    position: absolute;
+    z-index: 10;
+    display: block;
+}
+.etoile{
+    background-color: rgb(224, 224, 13);
+    height: calc(var(--height) * 0.25);
+    width: calc(var(--height) * 0.25);
+    top: calc(var(--width)/9.5);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.boule{
+    background-color: red;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px
+}
+.boule#b1{
+    top : 60%;
+    left: 80%;
+}
+.boule#b2{
+    top : 60%;
+    left: 20%;
+}
+.boule#b3{
+    top : 30%;
+    left: 50%;
+}
+.boule#b4{
+    top : 40%;
+    left: 66%;
+} 
+.boule#b5{
+    top : 40%;
+    left: 36%;
+}
+.boule#b6{
+    top : 50%;
+    left: 66%;
+}
+
+.boule#b7{
+    top : 43%;
+    left: 80%;
+}
+.boule#b8{
+    top : 24%;
+    left: 31%;
+}
+.boule#b9{
+    top : 24%;
+    left: 63%;
+}
+.boule#b10{
+    top : 43%;
+    left: 14%;
+}
+
+.boule#b11{
+    top : 65%;
+    left: 97%;
+}
+
+.boule#b12{
+    top : 65%;
+    left: -1%;
+}
+
+.boule#b13{
+    top : 60%;
+    left: 50%;
+}
+.sol{
+    position: absolute;
+    width:100%;
+    height:50%;
+    background-color:white;
+
+    }
+.ciel{
+    position: absolute;
+    width:100%;
+    height:50%;
+    background-color:rgb(15, 186, 225);
+
+    }
